@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personajePrefab: {fileID: 7312051465873117992, guid: 3da5b6fd6e1bb4c438b0646a2f99f2b2, type: 3}
   areaSpawn: {fileID: 1192164831}
-  cantidadPersonajes: 100
+  cantidadPersonajes: 10
 --- !u!4 &436586772
 Transform:
   m_ObjectHideFlags: 0
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personajePrefab: {fileID: 5442508732968593765, guid: 3878f9a965c1a6d449f8eae9177c7ce7, type: 3}
   areaSpawn: {fileID: 1480350546}
-  cantidadPersonajes: 100
+  cantidadPersonajes: 10
 --- !u!4 &1854046212
 Transform:
   m_ObjectHideFlags: 0
