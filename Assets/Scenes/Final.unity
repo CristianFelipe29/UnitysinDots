@@ -465,11 +465,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0424e0949561c7e4986e682e05b9d18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelo: {fileID: 0}
-  modelo1: {fileID: 7312051465873117992, guid: 3da5b6fd6e1bb4c438b0646a2f99f2b2, type: 3}
-  modelo2: {fileID: 5442508732968593765, guid: 3878f9a965c1a6d449f8eae9177c7ce7, type: 3}
+  modelo: {fileID: 5442508732968593765, guid: 3878f9a965c1a6d449f8eae9177c7ce7, type: 3}
   areaSpawn: {fileID: 1192164831}
-  ejercito: {fileID: 11400000, guid: 00f18cd9218980f4bb7e5d8e0ae7e036, type: 2}
+  ejercito: {fileID: 11400000, guid: 2f4d0c0d14e8d484bb82ba3db9203d68, type: 2}
 --- !u!4 &436586772
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,6 +1129,7 @@ MonoBehaviour:
   soundSigtMarcha: {fileID: 8300000, guid: 1ff348ab398ede1448d696e1aef936b7, type: 3}
   soundLaser: {fileID: 8300000, guid: 7d213974bbddf3c49bd7a2425304cca7, type: 3}
   soundEspada: {fileID: 0}
+  soundDenied: {fileID: 0}
 --- !u!114 &735439139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,11 +1299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0424e0949561c7e4986e682e05b9d18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelo: {fileID: 0}
-  modelo1: {fileID: 7312051465873117992, guid: 3da5b6fd6e1bb4c438b0646a2f99f2b2, type: 3}
-  modelo2: {fileID: 5442508732968593765, guid: 3878f9a965c1a6d449f8eae9177c7ce7, type: 3}
+  modelo: {fileID: 7312051465873117992, guid: 3da5b6fd6e1bb4c438b0646a2f99f2b2, type: 3}
   areaSpawn: {fileID: 1399441625}
-  ejercito: {fileID: 11400000, guid: 3a8d4730cc9fe36448dbcd95335b63c4, type: 2}
+  ejercito: {fileID: 11400000, guid: 952b20e08a29ad34b800b42691156106, type: 2}
 --- !u!4 &873123450
 Transform:
   m_ObjectHideFlags: 0

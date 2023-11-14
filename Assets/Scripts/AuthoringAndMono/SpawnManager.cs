@@ -5,8 +5,6 @@ using System;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject modelo;
-    public GameObject modelo1; // Prefab del personaje a generar
-    public GameObject modelo2;
     public Transform areaSpawn; // �rea dentro de la cual se generan los personajes
     private int cantidadPersonajes; // N�mero de personajes a generar
     public  TipoEjercito ejercito;
@@ -15,16 +13,6 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        name = ejercito.getEjercito();
-
-        if (name == "ROMANO"){
-            modelo = modelo1;
-        }else if(name == "ALIEN"){
-            modelo = modelo2;
-        }else{
-            modelo = modelo1;
-        }
-
         cantidadPersonajes = ejercito.getCantidad();
 
         // Genera los personajes dentro del �rea especificada
