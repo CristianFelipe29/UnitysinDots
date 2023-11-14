@@ -2251,7 +2251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939e8d7769b234b42bf77b064e426e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Romanos1: {fileID: 11400000, guid: 00f18cd9218980f4bb7e5d8e0ae7e036, type: 2}
+  Romano1: {fileID: 11400000, guid: 952b20e08a29ad34b800b42691156106, type: 2}
+  Alien1: {fileID: 11400000, guid: 2f4d0c0d14e8d484bb82ba3db9203d68, type: 2}
   inCantidad: {fileID: 156968684}
   inVida: {fileID: 292017507}
   inFuerza: {fileID: 1821687908}
@@ -2274,6 +2275,7 @@ MonoBehaviour:
   soundSigtMarcha: {fileID: 8300000, guid: ff857998ae5812d4dbc5a66ddea6ac4d, type: 3}
   soundLaser: {fileID: 8300000, guid: 96788b0251a355546902a84876dc532a, type: 3}
   soundEspada: {fileID: 8300000, guid: 8da06f3aa8d4e6843bed45b3d7786807, type: 3}
+  soundDenied: {fileID: 0}
 --- !u!1 &890720937
 GameObject:
   m_ObjectHideFlags: 0

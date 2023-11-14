@@ -12,6 +12,8 @@ public class SoundsButtons : MonoBehaviour
     public AudioClip soundLaser;
     public AudioClip soundEspada;
 
+    public AudioClip soundDenied;
+
     public void SoundLogo(){
         sound.clip = soundLogo;
 
@@ -42,6 +44,13 @@ public class SoundsButtons : MonoBehaviour
 
     public void SoundEspada(){
         sound.clip = soundEspada;
+
+        sound.enabled = false;
+        sound.enabled = true;
+    }
+
+     public void SoundDenied(){
+        sound.clip = soundDenied;
 
         sound.enabled = false;
         sound.enabled = true;

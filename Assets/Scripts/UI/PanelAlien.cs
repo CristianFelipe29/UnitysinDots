@@ -7,6 +7,7 @@ using TMPro;
 
 public class PanelAlien : MonoBehaviour
 {
+    public TipoEjercito Romanos1=null;
     public TipoEjercito Alien1=null;
     public TMP_InputField inCantidad;
     public TMP_InputField inVida;
@@ -39,16 +40,12 @@ public class PanelAlien : MonoBehaviour
     }
 
     public void Siguiente_3(){
-        SceneManager.LoadScene("PantallaSelect2");
+        if(Romanos1.getCantidad() != 0 && Alien1.getCantidad() != 0){
+            SceneManager.LoadScene("PantallaCarga");
+        }else if(Romanos1.getCantidad() == 0 || Alien1.getCantidad() == 0){
+            SceneManager.LoadScene("PantallaSelect3");
+        }
     }
-    public void Siguiente_6(){
-        SceneManager.LoadScene("PantallaCarga");
-    }
-
-    public void Anterior_3(){
-        SceneManager.LoadScene("PantallaSelect");
-    }
-
     public void Anterior_6(){
         SceneManager.LoadScene("PantallaSelect2");
     }

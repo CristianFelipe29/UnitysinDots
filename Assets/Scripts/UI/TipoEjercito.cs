@@ -5,11 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TipoEjercito", menuName = "Ejercito")]
 public class TipoEjercito : ScriptableObject
 {
-    public string ejercito = null;
-    public int Cantidad = 0;
-    public int Vida = 0;
-    public int Fuerza = 0;
-    public int Velocidad = 0 ;
+    public string ejercito;
+    public int Cantidad;
+    public int Vida;
+    public int Fuerza;
+    public int Velocidad;
 
     public string Descripcion;
     public Sprite Modelo;
@@ -70,8 +70,6 @@ public class TipoEjercito : ScriptableObject
     public Sprite getModelo(){
         return Modelo;
     }
-
-    
 
     
 }
