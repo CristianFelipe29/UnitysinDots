@@ -7,8 +7,8 @@ using TMPro;
 
 public class PanelAlien : MonoBehaviour
 {
-    public TipoEjercito Romanos1=null;
-    public TipoEjercito Alien1=null;
+    public Ejercito Romano;
+    public Ejercito Alien;
     public TMP_InputField inCantidad;
     public TMP_InputField inVida;
     public TMP_InputField inFuerza;
@@ -21,40 +21,32 @@ public class PanelAlien : MonoBehaviour
 
     public void inputCantidad_1(){
         cantidadAlien1 = Convert.ToInt32(inCantidad.text);
-        Alien1.setCantidad(cantidadAlien1);
+        Alien.setCantidad(cantidadAlien1);
     }
 
     public void inputVida_1(){
         vidaAlien1 = Convert.ToInt32(inVida.text);
-        Alien1.setVida(vidaAlien1);
+        Alien.setVida(vidaAlien1);
     }
 
     public void inputFuerza_1(){
         fuerzaAlien1 = Convert.ToInt32(inFuerza.text);
-        Alien1.setFuerza(fuerzaAlien1);
+        Alien.setFuerza(fuerzaAlien1);
     }
 
     public void inputVelocidad_1(){
         velocidadAlien1 = Convert.ToInt32(inVelocidad.text);
-        Alien1.setVelocidad(velocidadAlien1);
+        Alien.setVelocidad(velocidadAlien1);
     }
 
     public void Siguiente_3(){
-        if(Romanos1.getCantidad() != 0 && Alien1.getCantidad() != 0){
+
+        GestorDatosA.InstanceA.SetDatosA(Alien);
+
+        if(Romano.getCantidad() != 0 && Alien.getCantidad() != 0){
             SceneManager.LoadScene("PantallaCarga");
-        }else if(Romanos1.getCantidad() == 0 || Alien1.getCantidad() == 0){
+        }else if(Romano.getCantidad() == 0 || Alien.getCantidad() == 0){
             SceneManager.LoadScene("PantallaSelect3");
         }
-    }
-    public void Anterior_6(){
-        SceneManager.LoadScene("PantallaSelect2");
-    }
-
-    public void Logo_3(){
-        SceneManager.LoadScene("PantallaPrincipal");
-    }
-
-    public void Salir_3(){
-        Application.Quit();
     }
 }

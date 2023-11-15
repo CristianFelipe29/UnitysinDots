@@ -52,7 +52,6 @@ public class PauseMenu : MonoBehaviour
 
     }
     
-
     public void Continuar(){
         
         estado = Estado.play;
@@ -62,14 +61,6 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = false;
         Time.timeScale = 1;
         
-    }
-
-    public void MenuPrincipal(){
-        SceneManager.LoadScene("PantallaPrincipal");
-    }
-
-    public void Salir_5(){
-        Application.Quit();
     }
 
     public enum Estado

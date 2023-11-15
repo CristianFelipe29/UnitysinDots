@@ -1658,6 +1658,7 @@ MonoBehaviour:
   soundSigtMarcha: {fileID: 8300000, guid: 1ff348ab398ede1448d696e1aef936b7, type: 3}
   soundLaser: {fileID: 8300000, guid: 7d213974bbddf3c49bd7a2425304cca7, type: 3}
   soundEspada: {fileID: 0}
+  soundDenied: {fileID: 0}
 --- !u!1 &1228465974
 GameObject:
   m_ObjectHideFlags: 0

@@ -573,9 +573,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761276}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Alien_1
+      - m_Target: {fileID: 877761278}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Alien
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 877761272}
   - component: {fileID: 877761276}
   - component: {fileID: 877761277}
+  - component: {fileID: 877761278}
   m_Layer: 5
   m_Name: PantallaSelec_1
   m_TagString: Untagged
@@ -1005,6 +1006,18 @@ MonoBehaviour:
   soundLaser: {fileID: 8300000, guid: 96788b0251a355546902a84876dc532a, type: 3}
   soundEspada: {fileID: 8300000, guid: 8da06f3aa8d4e6843bed45b3d7786807, type: 3}
   soundDenied: {fileID: 8300000, guid: 1ff348ab398ede1448d696e1aef936b7, type: 3}
+--- !u!114 &877761278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877761271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2169830e56bade479b2b8d25b6e1e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1096567417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,9 +1102,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761276}
-        m_TargetAssemblyTypeName: PanelSelect_1, Assembly-CSharp
-        m_MethodName: Salir_1
+      - m_Target: {fileID: 877761278}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1252,9 +1265,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761276}
-        m_TargetAssemblyTypeName: PanelSelect, Assembly-CSharp
-        m_MethodName: Logo_1
+      - m_Target: {fileID: 877761278}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Principal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1415,9 +1428,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761276}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Romano_1
+      - m_Target: {fileID: 877761278}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Romano
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1730,9 +1743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761276}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Anterior_1
+      - m_Target: {fileID: 877761278}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Principal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

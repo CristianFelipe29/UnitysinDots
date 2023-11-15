@@ -440,9 +440,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761278}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Alien_1
+      - m_Target: {fileID: 877761279}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Alien
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 877761272}
   - component: {fileID: 877761277}
   - component: {fileID: 877761278}
+  - component: {fileID: 877761279}
   m_Layer: 5
   m_Name: PantallaSelec_1
   m_TagString: Untagged
@@ -737,6 +738,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ec7bfe1db2cd947baac4abce7fff96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &877761279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877761271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2169830e56bade479b2b8d25b6e1e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1096567417
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,9 +834,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761278}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Salir_1
+      - m_Target: {fileID: 877761279}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1119,9 +1132,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761278}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Logo_1
+      - m_Target: {fileID: 877761279}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Principal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1718,9 +1731,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 877761278}
-        m_TargetAssemblyTypeName: PanelSelect1, Assembly-CSharp
-        m_MethodName: Anterior_1
+      - m_Target: {fileID: 877761279}
+        m_TargetAssemblyTypeName: ControlEscenas, Assembly-CSharp
+        m_MethodName: Select1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

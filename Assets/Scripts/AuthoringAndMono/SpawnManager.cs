@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject modelo;
     public Transform areaSpawn; // �rea dentro de la cual se generan los personajes
     private int cantidadPersonajes; // N�mero de personajes a generar
-    public  TipoEjercito ejercito;
+    public  Ejercito ejercito;
     private string name;
     
 

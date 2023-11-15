@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class Selection : MonoBehaviour
 {
 
-    public TipoEjercito tipoEjercito = null;
+    public Ejercito tipoEjercito;
 
-    public TextMeshProUGUI ejercitotext = null;
-    public TextMeshProUGUI descriptiontext = null;
+    public TextMeshProUGUI ejercitotext;
+    public TextMeshProUGUI descriptiontext;
 
-    public Image modeloImage = null;
+    public Image modeloImage;
 
 
     void Start()
