@@ -8,14 +8,23 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
+        GameObject[] personajes = new GameObject[cantidadPersonajes];
+
         // Genera los personajes dentro del área especificada
         for (int i = 0; i < cantidadPersonajes; i++)
         {
-            SpawnPersonaje();
+            personajes[i] = SpawnPersonaje();
+        }
+
+        // Establece objetivos para que se persigan mutuamente
+        for (int i = 0; i < cantidadPersonajes; i++)
+        {
+            int indexObjetivo = (i + 1) % cantidadPersonajes; // Siguiente personaje como objetivo
+            personajes[i].GetComponent<MovimientoPersonajes>().objetivo = personajes[indexObjetivo].transform;
         }
     }
 
-    void SpawnPersonaje()
+    GameObject SpawnPersonaje()
     {
         // Obtiene una posición aleatoria dentro del área de spawn
         Vector3 posicionAleatoria = new Vector3(
@@ -25,16 +34,19 @@ public class SpawnManager : MonoBehaviour
         );
 
         // Instancia el personaje en la posición aleatoria y verifica colisiones
-        UnityEngine.Collider[] colliders = Physics.OverlapSphere(posicionAleatoria, 1f);
+        Collider[] colliders = Physics.OverlapSphere(posicionAleatoria, 1f);
         if (colliders.Length == 0)
         {
             GameObject nuevoPersonaje = Instantiate(personajePrefab, posicionAleatoria, Quaternion.identity);
-            // Aquí podrías configurar las características del personaje si es necesario
+            return nuevoPersonaje;
         }
         else
         {
             // Si hay colisiones, intenta encontrar una nueva posición
-            SpawnPersonaje();
+            return SpawnPersonaje();
         }
     }
 }
+
+
+

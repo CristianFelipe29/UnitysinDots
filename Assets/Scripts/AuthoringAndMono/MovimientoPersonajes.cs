@@ -21,7 +21,7 @@ public class MovimientoPersonajes : MonoBehaviour
             Vector3 nuevaPosicion = transform.position + movimiento;
 
             // Limita la nueva posición dentro de los límites del plano (si es necesario)
-            // Puedes añadir aquí la lógica de limitación del movimiento si es necesario
+            // Por ejemplo, puedes utilizar clamping para mantener al personaje dentro de ciertos límites
 
             // Aplica la nueva posición al personaje
             transform.position = nuevaPosicion;
@@ -42,7 +42,11 @@ public class MovimientoPersonajes : MonoBehaviour
         if (collision.transform == objetivo)
         {
             // Resta fuerza de ataque a la vida del objetivo
-            objetivo.GetComponent<MovimientoPersonajes>().RecibirAtaque(fuerzaDeAtaque);
+            MovimientoPersonajes scriptObjetivo = objetivo.GetComponent<MovimientoPersonajes>();
+            if (scriptObjetivo != null)
+            {
+                scriptObjetivo.RecibirAtaque(fuerzaDeAtaque);
+            }
         }
     }
 
