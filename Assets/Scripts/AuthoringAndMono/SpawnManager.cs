@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject personajePrefab; // Prefab del personaje a generar
+    public GameObject[] personajePrefabs; // Matriz de prefabs de personajes a generar
     public Transform areaSpawn; // Área dentro de la cual se generan los personajes
     public int cantidadPersonajes = 5; // Número de personajes a generar
 
@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
         // Genera los personajes dentro del área especificada
         for (int i = 0; i < cantidadPersonajes; i++)
         {
-            personajes[i] = SpawnPersonaje();
+            personajes[i] = SpawnPersonaje(personajePrefabs[i % personajePrefabs.Length]);
         }
 
         // Establece objetivos para que se persigan mutuamente
@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    GameObject SpawnPersonaje()
+    GameObject SpawnPersonaje(GameObject prefab)
     {
         // Obtiene una posición aleatoria dentro del área de spawn
         Vector3 posicionAleatoria = new Vector3(
@@ -37,16 +37,17 @@ public class SpawnManager : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(posicionAleatoria, 1f);
         if (colliders.Length == 0)
         {
-            GameObject nuevoPersonaje = Instantiate(personajePrefab, posicionAleatoria, Quaternion.identity);
+            GameObject nuevoPersonaje = Instantiate(prefab, posicionAleatoria, Quaternion.identity);
             return nuevoPersonaje;
         }
         else
         {
             // Si hay colisiones, intenta encontrar una nueva posición
-            return SpawnPersonaje();
+            return SpawnPersonaje(prefab);
         }
     }
 }
+
 
 
 
